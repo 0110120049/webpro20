@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IMAGE PICKER</title>
+</head>
+
+<body style="margin: 250px">
+
+    <center>
+        <select onchange="gantigambar();" id="listgambar">
+			<option value="https://asset.kompas.com/crop/0x9:960x649/750x500/data/photo/2019/01/04/492522684.jpg">PILIH KELOMPOK BURUNG AIR SASARAN SENSUS</option>
+            <option value=imeg/burungmandar.jpg>Burung Mandar</option>
+            <option value=imeg/burungpacuk.png>Burung Pacuk</option>
+            <option value=imeg/burungpacukular.jpg>Burung Pacuk Ular</option>
+            <option value=imeg/burungpelikan.png>Burung Pelikan</option>
+            <option value=imeg/burungtikusan.jpg>Burung Tikusan</option>
+            <option value=imeg/burungpantai.jpg>Burung Burung pantai</option>
+            <option value=imeg/burungbebek.jpg>Burung Bebek</option>
+            <option value=imeg/burungmentok.jpg>Burung mentok</option>
+        
+        
+        </select>
+    </center>
+    <br/>
+    <img src="https://asset.kompas.com/crop/0x9:960x649/750x500/data/photo/2019/01/04/492522684.jpg" style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+    function gantigambar() {
+        let gambar = document.getElementById("listgambar").value;
+        document.getElementById("gambar").src = gambar;
+        alert("Ini Gambar " + gambar);
+    }
+</script>
+
+</html>
